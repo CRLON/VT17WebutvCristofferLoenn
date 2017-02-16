@@ -64,6 +64,7 @@ li {
   margin-left: 88px;
   margin-top: 2px;
   border-radius: 4px;
+  box-shadow: 1px 1px 1px black;
 }
 
 main {
@@ -80,6 +81,7 @@ main {
 .mainImage {
   margin: 0px;
   border-radius: 4px;
+  box-shadow: 2px 2px 4px black;
 }
 
 footer {
