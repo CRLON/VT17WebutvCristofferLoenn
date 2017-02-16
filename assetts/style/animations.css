@@ -1,0 +1,51 @@
+body {
+  background-color: gray;
+}
+
+img {
+  height: 100px;
+}
+
+h1 {
+  width: 400px;
+  height: 200px;
+  margin-top: 10%;
+  margin-left: 50%;
+  margin-right: 50%;
+  top: 0%;
+}
+
+#pblock {
+  margin-top: 100px;
+  
+  width: 200px;
+  height: 50px;
+  background-color: red; 
+}
+
+@keyframes resizeanimation {
+  0% {transform: translate(-400px, 0px);}
+  50% {transform: translate(800px, 0px);}
+  100% {transform: translate(2000px, 0px);}
+}
+
+#catanimation {
+  animation-name: resizeanimation;
+  animation-duration: 90ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  25% {color: red; margin-left: 40%; transform: rotateX(10deg);}
+  50% {color: yellow; margin-right: 40%;}
+  75% {color: hotpink; margin-left: 40%; transform: rotateX(10deg);}
+  100% {color: green; margin-right: 40%;}
+}
+
+#h1animation {
+  animation-name: blinking;
+  animation-duration: 1ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes 
