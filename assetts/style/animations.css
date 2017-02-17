@@ -12,7 +12,6 @@ body {
 
 #catanimation {
   height: 100px;
-  z-index: 2;
   animation-name: lefttoright;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -29,8 +28,7 @@ body {
   text-align: center;
   width: 400px;
   height: 200px;
-  margin-top: 4%;
-  z-index: 2;
+  margin-top: 20px;
   animation-name: blinking;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -45,11 +43,10 @@ body {
 
 #pblock {
   margin-left: 50%;
-  margin-top: 100px;
+  margin-top: 4px;
   width: 150px;
   height: 25px;
   background-color: red;
-  z-index: 2;
   animation-name: blockanimation;
   animation-timing-function: ease;
   animation-duration: 4s;
@@ -65,13 +62,12 @@ body {
 
 #pcircle {
   margin-left: 50%;
-  margin-top: 100px;
+  margin-top: 2px;
   margin-bottom: 50px;
   width: 100px;
   height: 100px;
   background-color: lightgray;
   border-radius: 50%;
-  z-index: 4;
   animation-name: circleanimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -89,10 +85,10 @@ body {
 #square {
   width: 200px;
   height: 100px;
+  margin-top: 2px;
   background-color: #0e004f;
   color: white;
   font-size: 2em;
-  z-index: 2;
   animation-name: squareanimation;
   animation-duration: 5s;
   animation-timing-function: ease-in;
@@ -103,7 +99,6 @@ body {
   width: 800px;
   height: 20px;
   background-color: #510072;
-  z-index: 1;
   animation-name: squareanimation;
   animation-duration: 200ms;
   animation-iteration-count: infinite;
