@@ -14,30 +14,30 @@ for(var i = 0; i < operatorKeys.length; i++) {
 }
 
 function numberInput() {
-  if(isValidCalculation === false) {
+  if(isValidCalculation == false) {
     clearWindow();
   }
   if(isLastInputZero(this.innerText) != true) {
   if(display.innerText != "0") {
     display.innerText += this.innerText;
   }
-  else if(display.innerText === "0") {
+  else if(display.innerText == "0") {
     display.innerText = this.innerText;
   }
   }
 }
 
 function operatorInput() {
-  if(isValidCalculation === false) {
+  if(isValidCalculation == false) {
     clearWindow();
   }
-  if(this.innerText === "+") {
+  if(this.innerText == "+") {
     add();
   }
-  else if(this.innerText === "-") {
+  else if(this.innerText == "-") {
     subtract();
   }
-  else if(this.innerText === "=") {
+  else if(this.innerText == "=") {
     calculate();
   }
 }
@@ -71,6 +71,9 @@ function add() {
 function subtract() {
   if(isValidInput() && display.innerText != "0") {
     display.innerText += "-";
+  }
+  else if(isValidInput() && display.innerText == "0") {
+    display.innerText = "-";
   }
 }
 
