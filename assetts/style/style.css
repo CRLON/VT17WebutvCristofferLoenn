@@ -29,11 +29,10 @@ header {
 aside {
   background-color: #d8efff;
   display: inline-block;
-  float: left;
   margin-left: 8px;
   margin-top: 8px;
   margin-bottom: 0px;
-  height: 500px;
+  height: 550px;
   width: 140px;
   border: 1px solid #c0c0c0;
   box-shadow: 0.5px 0.5px 3px black;
@@ -51,6 +50,7 @@ h3 {
 }
 
 li:hover {
+  /*border: 0.5px solid #c0c0c0;*/
   box-shadow: 1px 1px 2px #c0c0c0;
 }
 
@@ -58,30 +58,34 @@ li {
   margin-bottom: 2px;
   list-style: none;
 }
-
+/*
+a:hover {
+  background-color: #d3e4ff;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+*/
 .sideImage {
-  max-width: 50px;
-  margin-left: 88px;
+  max-width: 136px;
+  margin-left: 2px;
   margin-top: 2px;
   border-radius: 4px;
-  box-shadow: 1px 1px 1px black;
 }
 
 main {
   display: inline-block;
   position: absolute;
-  float: right;
   margin-top: 4px;
   margin-bottom: 40px;
   margin-left: 8px;
   margin-right: 10px;
-  width: 70%;
+  width: 50%;
 }
-
+.mainParagraphTwo {
+  margin-top: 4px;
+}
 .mainImage {
   margin: 0px;
   border-radius: 4px;
-  box-shadow: 2px 2px 4px black;
 }
 
 footer {
