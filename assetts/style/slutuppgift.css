@@ -72,3 +72,24 @@ li {
 }
 
 }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    h2 {
+    font-size: 1em;
+  }
+
+  ul {
+    font-size: 0.8em;
+  }
+
+  li {
+    margin: 0px 45%;
+  }
+
+.ingredients {
+  float: none;
+}
+}
