@@ -71,7 +71,6 @@ li {
 }
 
 .steps {
-  margin-left: 30px;
   font-size: 1em;
 }
 
@@ -126,6 +125,7 @@ li {
     float: none;
     width: auto;
     margin-top: 0px;
+    margin-left: 50px;
     font-size: 0.9em;
   }
 
@@ -178,6 +178,7 @@ and (orientation : portrait) {
     float: none;
     width: auto;
     margin-top: 0px;
+    margin-left: 50px;
     font-size: 0.9em;
   }
 
