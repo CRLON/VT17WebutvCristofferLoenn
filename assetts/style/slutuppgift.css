@@ -14,6 +14,7 @@ article {
 .recipe__image {
   border-radius: 10px;
   margin-top: 6%;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 body {
@@ -35,6 +36,7 @@ nav {
 
 ul {
   list-style: none;
+  font-size: 1.2em;
 }
 
 .navlinks {
@@ -58,18 +60,19 @@ h2 {
 
 h4 {
   /*text-align: left;*/
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin-left: 12px;
 
 }
 
 li {
   padding: 2px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .steps {
   margin-left: 30px;
+  font-size: 1em;
 }
 
 .ingredients {
@@ -82,7 +85,7 @@ li {
   box-shadow: 1px 1px 1px lightgray;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 22em;
+  height: 28em;
 }
 
 @media screen and (max-width: 500px) {
@@ -92,11 +95,11 @@ li {
 
   h4 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   ul {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   li {
@@ -123,12 +126,13 @@ li {
     float: none;
     width: auto;
     margin-top: 0px;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .ingredients {
     float: none;
     width: auto;
+    height: 10%;
     margin-top: 0px;
   }
 }
@@ -143,11 +147,11 @@ and (orientation : portrait) {
 
   h4 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   ul {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   li {
@@ -174,7 +178,7 @@ and (orientation : portrait) {
     float: none;
     width: auto;
     margin-top: 0px;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .ingredients {
