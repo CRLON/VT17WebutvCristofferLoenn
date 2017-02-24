@@ -3,6 +3,18 @@
   margin: 0px;
   font-family: sans-serif;
 }
+main {
+ display: flex;
+}
+
+article {
+  margin: auto;
+}
+
+.recipe__image {
+  border-radius: 10px;
+  margin-top: 6%;
+}
 
 body {
   background-color: rgb(247, 247, 223);
@@ -24,6 +36,7 @@ nav {
 ul {
   list-style: none;
 }
+
 .navlinks {
   font-size: 1.2em;
  /* outline: solid gray 1px; */
@@ -55,14 +68,21 @@ li {
   font-size: 0.9em;
 }
 
+.steps {
+  margin-left: 30px;
+}
+
 .ingredients {
   background-image: url("../resource/skulls.png");
   /*overflow: auto;*/
   position: relative;
   margin-top: 4%;
+  padding: 14px;
   float: left;
   box-shadow: 1px 1px 1px lightgray;
-  padding: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 22em;
 }
 
 @media screen and (max-width: 500px) {
@@ -83,6 +103,23 @@ li {
     padding: 1px;
     text-align: center;
     font-size: 1.2em;
+  }
+
+  main {
+    display: inline-block;
+  }
+
+  .recipe__image {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .steps {
+    float: none;
+    width: auto;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 0.8em;
   }
 
   .ingredients {
@@ -113,6 +150,23 @@ and (orientation : portrait) {
     padding: 1px;
     text-align: center;
     font-size: 1.2em;
+  }
+
+  main {
+    display: inline-block;
+  }
+
+  .recipe__image {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .steps {
+    float: none;
+    width: auto;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 0.8em;
   }
 
   .ingredients {
