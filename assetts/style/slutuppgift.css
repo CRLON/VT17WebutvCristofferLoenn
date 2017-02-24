@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: sans-serif;
 }
 
 body {
@@ -20,11 +21,14 @@ nav {
   height: 30px;
 }
 
+ul {
+  list-style: none;
+}
 .navlinks {
   font-size: 1.2em;
  /* outline: solid gray 1px; */
   position: relative;
-  box-shadow: 2px 2px 2px lightgray;
+  /*box-shadow: 2px 2px 2px lightgray;*/
   top: 4px;
 }
 
@@ -39,19 +43,26 @@ h2 {
  /* font-size: 1.5vw; */
 }
 
+h4 {
+  /*text-align: left;*/
+  font-size: 0.9em;
+  margin-left: 12px;
+
+}
+
 li {
-  margin-left: 30%;
+  padding: 2px;
+  font-size: 0.9em;
 }
 
 .ingredients {
   background-image: url("../resource/skulls.png");
   /*overflow: auto;*/
   position: relative;
-  /*max-width: 20%;*/
-  margin-top: 10%;
+  margin-top: 4%;
   float: left;
-  padding: 1em;
   box-shadow: 1px 1px 1px lightgray;
+  padding: 14px;
 }
 
 @media screen and (max-width: 500px) {
@@ -59,26 +70,38 @@ li {
     font-size: 1em;
   }
 
+  h4 {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
   ul {
     font-size: 0.8em;
   }
 
   li {
-    margin: 0px 45%;
+    padding: 1px;
+    text-align: center;
   }
 
-.ingredients {
-  float: none;
-}
-
+  .ingredients {
+    float: none;
+    width: auto;
+    margin-top: 0px;
+  }
 }
 
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
-    h2 {
+  h2 {
     font-size: 1em;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 0.8em;
   }
 
   ul {
@@ -86,10 +109,13 @@ and (orientation : portrait) {
   }
 
   li {
-    margin: 0px 45%;
+    padding: 1px;
+    text-align: center;
   }
 
-.ingredients {
-  float: none;
-}
+  .ingredients {
+    float: none;
+    width: auto;
+    margin-top: 0px;
+  }
 }
