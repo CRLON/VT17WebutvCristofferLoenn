@@ -47,6 +47,10 @@ ul {
   top: 4px;
 }
 
+#numberInput {
+  width: 100%;
+}
+
 h1 {
   font-family: sans-serif;
   text-shadow: 2px 2px 1px lightgray;
@@ -78,13 +82,13 @@ li {
   background-image: url("../resource/skulls.png");
   /*overflow: auto;*/
   position: relative;
-  margin-top: 4%;
+  margin-top: 2%;
   padding: 14px;
   float: left;
   box-shadow: 1px 1px 1px lightgray;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 28em;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -109,6 +113,11 @@ li {
 
   main {
     display: inline-block;
+  }
+
+  #numberInput {
+    width: 20%;
+    margin-left: 40%;
   }
 
   .recipe__imagebox {
@@ -162,6 +171,11 @@ and (orientation : portrait) {
 
   main {
     display: inline-block;
+  }
+
+    #numberInput {
+    width: 20%;
+    margin-left: 40%;
   }
 
   .recipe__imagebox {
