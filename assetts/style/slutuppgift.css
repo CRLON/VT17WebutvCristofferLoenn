@@ -20,7 +20,9 @@ article {
 #loading__gif {
   visibility: hidden;
   float: left;
-  width: 15%;
+  margin-left: 22%;
+  clear: both;
+  width: 140px;
 }
 
 body {
@@ -86,11 +88,11 @@ li {
 #rating__header {
   font-size: 1.4em;
   margin-top: 4px;
-  margin-left: 45%;
+  margin-left: 46%;
 }
 
 .rating {
-  margin-right: 42%;
+  margin-right: 38%;
 }
 
 /* Star-rating style taken from https://css-tricks.com/star-ratings/ */
@@ -100,7 +102,7 @@ li {
 }
 
 .stars__div {
-  margin-left: 38%;
+  margin-left: 22%;
   unicode-bidi: bidi-override;
   direction: rtl;
   float: left;
@@ -122,7 +124,7 @@ li {
 }
 
 #rating__header {
-  margin-left: 25%;
+  margin-left: 26%;
 }
 
 .ingredients {
