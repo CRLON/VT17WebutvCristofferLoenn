@@ -19,7 +19,7 @@
 <main>
 
 <aside class="ingredients">
-  <h2>Ingredienser:</h2>
+  <h2 id="ingredients__header">Ingredienser:</h2>
   <h4>Fyllning:</h4> <!-- CHANGE TO H3? -->
     <ul class="ingredients__list">
       <li><span class="ingredients__amount">500</span>gram blåbär</li>
@@ -59,10 +59,22 @@
     <li>Blanda runt och häll sedan smeten över bären.</li>
     <li> Låt sedan stå i ugnen 30-40 minuter, tills pajen fått en fin färg. Servera med vaniljvisp!</li>
   </ol>
-    <div class="rating__box">
-      <h3>Rating</h3>
-      <span class="stars">&starf; &starf; &starf; &starf; &starf;</span>
-    </div>
+    
+      <h3 id="rating__header">Rating</h3>
+      <div class="rating">Betyg: <span class="rating__output">0</span>
+      <span>Antal röster: </span><span class="rating__output">0</span>
+      </div>
+      <div class="stars__div">
+      <span class="stars">&star;</span>
+      <span class="stars">&star;</span>
+      <span class="stars">&star;</span>
+      <span class="stars">&star;</span>
+      <span class="stars">&star;</span>
+      </div>
+            <figure>
+        <img id="loading__gif" src="../resource/loading.gif">
+      </figure>
+    
 
 </article>
 
