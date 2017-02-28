@@ -6,28 +6,24 @@
   <title>Recept på blåbärspaj</title>
 </head>
 <body>
-
   <header>
     <h1>Blåbärspaj</h1>
   </header>
-
-  <nav>
-    <a class="navlinks" href="ombakverket.html">Om blåbärspaj</a>
-    <a class="navlinks" href="#">Recept</a>
-  </nav>
-
-<main>
-
-<aside class="ingredients">
+<nav>
+  <a class="navlinks" href="ombakverket.html">Om blåbärspaj</a>
+  <a class="navlinks" href="#">Recept</a>
+</nav>
+<main id="recipe__main">
+<aside id="ingredients__box">
   <h2 id="ingredients__header">Ingredienser:</h2>
-  <h4>Fyllning:</h4> <!-- CHANGE TO H3? -->
+  <h3 class="recipe__headers">Fyllning:</h3>
     <ul class="ingredients__list">
       <li><span class="ingredients__amount">500</span>gram blåbär</li>
       <li><span class="ingredients__amount">0.75</span>dl strösocker</li>
       <li><span class="ingredients__amount">1</span>tsk vaniljsocker</li>
       <li><span class="ingredients__amount">2</span>msk potatismjöl</li>
     </ul>
-  <h4>Smet:</h4>
+  <h3 class="recipe__headers">Smet:</h3>
     <ul class="ingredients__list">
       <li><span class="ingredients__amount">150</span>gram smör</li>
       <li><span class="ingredients__amount">0.5</span>dl sirap, ljus</li>
@@ -38,19 +34,17 @@
       <li><span class="ingredients__amount">2</span>dl strösocker</li>
       <li><span class="ingredients__amount">0.5</span>tsk salt</li>
     </ul>
-  <h4>Till servering:</h4>
+  <h3 class="recipe__headers">Till servering:</h3>
     <ul class="ingredients__list">
       <li><span class="ingredients__amount">2</span>dl vispgrädde</li>
     </ul>
   <input type="range" value="1" min="1" max="10" id="numberInput">
 </aside>
-
 <article id="recipe__article">
   <figure class="recipe__imagebox">
     <img id="recipe__image" src="../resource/blabarspaj.jpg" alt="Bild på blåbärspaj">
   </figure>
-
-  <h2>Tillagning</h2>
+<h2 id="steps__header">Tillagning</h2>
   <ol class="steps">
     <li>Sätt ugnen på 175 grader.</li>
     <li>Lägg bären i formen, pudra över potatismjöl och socker.</li>
@@ -59,25 +53,19 @@
     <li>Blanda runt och häll sedan smeten över bären.</li>
     <li> Låt sedan stå i ugnen 30-40 minuter, tills pajen fått en fin färg. Servera med vaniljvisp!</li>
   </ol>
-    
-      <h3 id="rating__header">Rating</h3>
-      <div class="rating__output">Betyg: <span id="rating__grade">0</span>
-      <span>Antal röster: </span><span id="rating__votes">0</span>
-      </div>
-      <div class="stars__div">
+<h3 id="rating__header">Rating</h3>
+  <div class="rating__output">Betyg: <span id="rating__grade">0</span> <span>Antal röster: </span> <span id="rating__votes">0</span> </div>
+    <div class="stars__div">
       <span class="stars">&star;</span>
       <span class="stars">&star;</span>
       <span class="stars">&star;</span>
       <span class="stars">&star;</span>
       <span class="stars">&star;</span>
-      </div>
-            <figure>
-        <img id="loading__gif" src="../resource/loading.gif">
-      </figure>
-    
-
+    </div>
+<figure>
+  <img id="loading__gif" src="../resource/loading.gif">
+</figure>
 </article>
-
 </main>
 <script type="text/javascript" src="../script/slutuppgift.js"></script>
 </body>
