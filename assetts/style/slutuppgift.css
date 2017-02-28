@@ -11,10 +11,28 @@ article {
   margin: auto;
 }
 
-.recipe__image {
+#about__headertwo {
+  text-align: center;
+}
+
+#about__paragraph {
+  text-align: center;
+}
+
+#about__imagebox {
+  margin-top: 2%;
+  margin-left: 30%;
+}
+
+#recipe__image {
   border-radius: 10px;
   margin-top: 6%;
-  box-shadow: 1px 1px 1px lightgray;
+  box-shadow: 1px 1px 1px gray;
+}
+
+#about__image {
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px gray;
 }
 
 #loading__gif {
@@ -81,18 +99,15 @@ li {
   font-size: 1em;
 }
 
-.rating {
+.rating__output {
   text-align: center;
+  margin-right: 38%;
 }
 
 #rating__header {
   font-size: 1.4em;
   margin-top: 4px;
   margin-left: 46%;
-}
-
-.rating {
-  margin-right: 38%;
 }
 
 /* Star-rating style taken from https://css-tricks.com/star-ratings/ */
@@ -174,10 +189,22 @@ li {
     margin: auto;
   }
 
-  .recipe__image {
+#recipe__image {
     width: 100%;
     margin: 0px;
   }
+
+#about__imagebox {
+  width: 100%;
+  margin: auto;
+}
+
+#about__image {
+  width: 100%;
+  margin: auto;
+}
+
+
 
   .steps {
     float: none;
@@ -236,7 +263,7 @@ and (orientation : portrait) {
     margin: auto;
   }
 
-  .recipe__image {
+#recipe__image {
     width: 100%;
     margin: 0px;
   }

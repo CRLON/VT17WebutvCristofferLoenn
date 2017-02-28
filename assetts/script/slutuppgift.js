@@ -11,22 +11,22 @@ var loadingAnimation = document.getElementById("loading__gif");
 var numberOfBatches = localStorage.getItem("numberOfBatches");
 var xhttp = new XMLHttpRequest();
 var response;
-var hasVoted;
+var sendVote;
+
+window.onloadend = getRating();
+
+ if(localStorage.getItem("hasVoted") == "true") {
+    var localVoteValue = parseInt(localStorage.getItem("savedVoteValue"));
+    fillStars(localVoteValue);
+  }
 
 if(localStorage.getItem("numberOfBatches") == "null") {
     localStorage.setItem("numberOfBatches", "1");
 	}
 	else {
     userInput.value = localStorage.getItem("numberOfBatches");
-	}
-
-if(localStorage.getItem("hasVoted") == "null") {
-    localStorage.setItem("hasVoted", "true");
-  }
-  else {
-    var hasVoted = localStorage.getItem("hasVoted")
-  }
-
+}
+// CHANGE VAR-NAME ----------------------------------------------------------------------------
 function inputModifier() {
   var newAmount = document.getElementById("numberInput").value;
   for(var i = 0; i < ingredientAmountList.length; i++) {
@@ -36,6 +36,7 @@ function inputModifier() {
   currentAmount = parseFloat(document.getElementById("numberInput").value);
   localStorage.setItem("numberOfBatches", currentAmount);
 }
+
 inputModifier();
 
 for(var i = 0; i < stars.length; i++) {
@@ -57,11 +58,36 @@ function getRating() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       response = JSON.parse(this.responseText);
-  xhttp.open("GET", "https://edu.oscarb.se/sjk15/api/recipe/?api_key=7bfcd321e8203f59&recipe=blåbärspaj", true);
+      updateRating();
+      hideLoadingAnimation();
    }
   }
+  xhttp.open("GET", "https://edu.oscarb.se/sjk15/api/recipe/?api_key=7bfcd321e8203f59&recipe=blåbärspaj", true);
+  xhttp.send();
 }
-getRating();
+
+
+function updateRating() {
+  rating__grade.innerText = response.rating.toFixed(1);
+  rating__votes.innerText = response.votes;
+}
+
+function addVote() {
+  if(localStorage.getItem("hasVoted") != "true") {
+  var voteValue = parseInt(this.value);
+  xhttp.onreadystatechange = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      sendVote = JSON.parse(this.responseText);
+      fillStars(voteValue);
+      getRating();
+      localStorage.setItem("hasVoted", "true");
+      localStorage.setItem("savedVoteValue", voteValue);
+    }
+  }
+  xhttp.open("GET", "https://edu.oscarb.se/sjk15/api/recipe/?api_key=7bfcd321e8203f59&recipe=blåbärspaj&rating=" + voteValue, true);
+  xhttp.send();
+  }
+}
 
 function showLoadingAnimation() {
   loadingAnimation.style.visibility = "visible";
@@ -69,10 +95,4 @@ function showLoadingAnimation() {
 
 function hideLoadingAnimation() {
   loadingAnimation.style.visibility = "hidden";
-}
-
-function addVote() {
-  if(hasVoted == "false") {
-    fillStars(this.value);
-  }
 }

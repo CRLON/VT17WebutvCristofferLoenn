@@ -42,12 +42,12 @@
     <ul class="ingredients__list">
       <li><span class="ingredients__amount">2</span>dl vispgrädde</li>
     </ul>
-  <input type="number" value="1" min="1" max="10" id="numberInput">
+  <input type="range" value="1" min="1" max="10" id="numberInput">
 </aside>
 
-<article>
+<article id="recipe__article">
   <figure class="recipe__imagebox">
-    <img class="recipe__image" src="../resource/blabarspaj.jpg" alt="Bild på blåbärspaj">
+    <img id="recipe__image" src="../resource/blabarspaj.jpg" alt="Bild på blåbärspaj">
   </figure>
 
   <h2>Tillagning</h2>
@@ -61,8 +61,8 @@
   </ol>
     
       <h3 id="rating__header">Rating</h3>
-      <div class="rating">Betyg: <span class="rating__output">0</span>
-      <span>Antal röster: </span><span class="rating__output">0</span>
+      <div class="rating__output">Betyg: <span id="rating__grade">0</span>
+      <span>Antal röster: </span><span id="rating__votes">0</span>
       </div>
       <div class="stars__div">
       <span class="stars">&star;</span>
