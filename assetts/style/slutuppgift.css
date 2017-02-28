@@ -277,7 +277,7 @@ li {
   text-align: center;
 }
 
-.ingredients {
+#ingredients__box {
   float: none;
   width: auto;
   margin-top: 0px;
